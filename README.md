@@ -1,5 +1,12 @@
-# truffle-init-webpack
-Example webpack project with Truffle. Includes contracts, migrations, tests, user interface and webpack build pipeline.
+# Voting
+
+Goals:
+
+- Install geth — the client software used to download the blockchain and run the Ethereum node on your local machine.
+- Install the Ethereum dapp framework called Truffle which will be used for compiling and deploying our contract.
+- Make small updates to our Voting application to make it work using truffle.
+- Compile and deploy the contract to the Ropsten testnet.
+- Interact with the contract through truffle console and then through a webpage.
 
 ## Usage
 
@@ -10,20 +17,19 @@ To initialize a project with this example, run `truffle init webpack` inside an 
 1. First run `truffle compile`, then run `truffle migrate` to deploy the contracts onto your network of choice (default "development").
 1. Then run `npm run dev` to build the app and serve it on http://localhost:8080
 
-## Possible upgrades
+## Screenshots
 
-* Use the webpack hotloader to sense when contracts or javascript have been recompiled and rebuild the application. Contributions welcome!
+### geth
+![geth](./screenshoots/geth.png)
 
-## Common Errors
+### deploy to Ropsten
+![deploy](./screenshoots/deploy.png)
 
-* **Error: Can't resolve '../build/contracts/MetaCoin.json'**
+### web
+![web](./screenshoots/web.png)
 
-This means you haven't compiled or migrated your contracts yet. Run `truffle compile` and `truffle migrate` first.
+-----
 
-Full error:
+Source: [Full Stack Hello World Voting Ethereum Dapp Tutorial — Part 2](https://medium.com/@mvmurthy/full-stack-hello-world-voting-ethereum-dapp-tutorial-part-2-30b3d335aa1f)
 
-```
-ERROR in ./app/main.js
-Module not found: Error: Can't resolve '../build/contracts/MetaCoin.json' in '/Users/tim/Documents/workspace/Consensys/test3/app'
- @ ./app/main.js 11:16-59
-```
+
